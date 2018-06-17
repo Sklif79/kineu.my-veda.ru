@@ -161,3 +161,124 @@ html, body {
 .eblock .info {
     width: calc(100% - 237px);
 }
+
+#scroll-content {
+    display: flex;
+    height: auto !important;
+}
+
+#scroll-content .left, #scroll-content .right {
+    display: block;
+}
+
+#scroll-content .left {
+    flex: none;
+}
+
+#scroll-content .right {
+    flex: none;
+    max-width: calc(100% - 250px);
+}
+
+@media (max-width: 1076px) {
+    #scroll-content .right {
+        max-width: none;
+    }
+}
+
+.nodes {
+    max-width: 100%;
+}
+
+.slider2 .image{
+    width: 217px;
+    height: 154px;
+    padding: 8px;
+    margin-bottom: 15px;
+    background: url(../img/slide-bg.png) center center no-repeat;
+    background-size: cover;
+}
+
+.slider2 {
+    list-style: none;
+    margin-bottom: 50px;
+}
+
+.slider2 .slick-slide img {
+    display: inline-block;
+}
+
+.slider2 .slick-slide {
+    margin-right: 20px;
+}
+
+.slider2 .image {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.btn-more2 {
+    display: block;
+}
+
+.slider2 .info {
+    padding: 0;
+}
+
+.slider2 .info a, .slider2 .info p {
+    padding: 0 5px;
+}
+
+.nodes:nth-of-type(even) .slider2 .slick-track {
+    margin-right: 50px;
+}
+
+.nodes:nth-of-type(odd) .slider2 .slick-track {
+    margin-left: -50px;
+}
+
+.nodes:nth-of-type(even) .slider2 li {
+    direction: ltr;
+    text-align: left;
+}
+
+.slider2 .slick-prev, .slider2 .slick-next {
+    width: 23px;
+    height: 32px;
+    z-index: 20;
+    top: 36%;
+}
+
+.slider2 .slick-prev:before,.slider2  .slick-next:before {
+    display: none;
+}
+
+.slider2 .slick-prev {
+    background: url(../img/navigation.png) left bottom no-repeat;
+    left: -40px;
+}
+
+@media (max-width: 1076px) {
+    .slider2 .slick-prev {
+        left: 15px;
+    }
+}
+
+.slider2 .slick-prev:hover {
+    background-position: 0 0;
+}
+
+.slider2 .slick-next {
+    background: url(../img/navigation.png) right bottom no-repeat;
+    right: -40px;
+}
+
+@media (max-width: 1076px) {
+    .slider2 .slick-next {
+        right: 15px;
+    }
+}
+
+.slider2 .slick-next:hover {
+    background: url(../img/navigation.png) right top no-repeat;
+}

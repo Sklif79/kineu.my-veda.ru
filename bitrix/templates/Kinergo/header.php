@@ -2,7 +2,7 @@
 $page = $APPLICATION->GetCurPage();?><!DOCTYPE html>
 <html xmlns='http://www.w3.org/1999/xhtml'>
 <head>
-<base href="https://kinergo.eu/">
+<base href="http://kineu.my-veda.ru/">
     <meta name="viewport" content="width=device-width, initial-scale=1">
        <?$APPLICATION->ShowHead();?>
 		<title><?$APPLICATION->ShowTitle();?></title>

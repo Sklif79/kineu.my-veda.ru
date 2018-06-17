@@ -71,4 +71,54 @@ $(document).ready(function() {
         $('html, body').animate({scrollTop: 0}, 500);
     });
 
+    $('.nodes:nth-of-type(odd) .slider2').slick({
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        centerMode: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        asNavFor: '.slider2',
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 481,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+
+    $('.nodes:nth-of-type(even) .slider2').attr('dir','rtl').slick({
+        slidesToShow: 3,
+        slidesToScroll: -1,
+        centerMode: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        asNavFor: '.slider2',
+        rtl: true,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 481,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
 });

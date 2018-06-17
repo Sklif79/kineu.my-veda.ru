@@ -157,7 +157,7 @@ $arResizeFile = CFile::ResizeImageGet(
 z-index:3000;
 }
 	.btn-more2 {
-		display: inline-block;
+		/*display: inline-block;*/
 		/*height: 60px;*/
         height: 36px;
         overflow: hidden;
@@ -165,7 +165,7 @@ z-index:3000;
 		padding: 5px 10px 0;
 		text-decoration: none;
 		background-color: #13487c;
-		width: 	205px;
+		/*width: 	205px;*/
 	}
 	.btn-more2 a{
 		display: inline;	
