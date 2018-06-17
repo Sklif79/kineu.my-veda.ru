@@ -143,7 +143,9 @@ if ($USER->IsAuthorized()){$aut=1;}else{$aut=-1;}
 	<style>
 	.btn-more2 {
 		display: inline-block;
-		height: 60px;
+        /*height: 60px;*/
+        height: 36px;
+        overflow: hidden;
 		color: white;
 		padding: 5px 10px 0;
 		text-decoration: none;
@@ -156,9 +158,11 @@ if ($USER->IsAuthorized()){$aut=1;}else{$aut=-1;}
 		font-size: 	12px;
 	}
 	.btn-more2:hover{
-		height: 100%;
-		min-height: 50px;	
-		padding-bottom: 10px;
+		/*height: 100%;*/
+		/*min-height: 50px;	*/
+		/*padding-bottom: 10px;*/
+        height: auto;
+        padding-bottom: 4px;
 	}
 	.btn-more2>p{
 		display: none;
