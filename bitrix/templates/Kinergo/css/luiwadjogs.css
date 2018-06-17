@@ -153,3 +153,11 @@ display: inline-block;
 html, body {
     height: auto;
 }
+
+.equipment .gridr {
+    width: calc(100% - 335px);
+}
+
+.eblock .info {
+    width: calc(100% - 237px);
+}
