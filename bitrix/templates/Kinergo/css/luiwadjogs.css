@@ -102,3 +102,7 @@ display: inline-block;
 #partners ul li img{
 	    height: 70px;
 }
+
+.article li {
+    width: 515px;
+}
