@@ -106,3 +106,22 @@ display: inline-block;
 .article li {
     width: 515px;
 }
+
+#head {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: #fff;
+    z-index: 1000;
+}
+
+#main {
+    padding-top: 159px;
+}
+
+@media (max-width: 575px) {
+    #main {
+        padding-top: 180px;
+    }
+}
