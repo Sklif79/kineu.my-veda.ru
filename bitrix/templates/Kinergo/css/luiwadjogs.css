@@ -113,7 +113,7 @@ display: inline-block;
     right: 0;
     top: 0;
     background: #fff;
-    z-index: 1000;
+    z-index: 10000;
 }
 
 #main {
@@ -246,7 +246,7 @@ html, body {
     width: 23px;
     height: 32px;
     z-index: 20;
-    top: 36%;
+    top: 95px;
 }
 
 .slider2 .slick-prev:before,.slider2  .slick-next:before {
@@ -281,4 +281,8 @@ html, body {
 
 .slider2 .slick-next:hover {
     background: url(../img/navigation.png) right top no-repeat;
+}
+
+#scroll-content .left .submenu {
+    height: 320px!important;
 }

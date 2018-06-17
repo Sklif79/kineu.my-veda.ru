@@ -71,13 +71,14 @@ $(document).ready(function() {
         $('html, body').animate({scrollTop: 0}, 500);
     });
 
-    $('.nodes:nth-of-type(odd) .slider2').slick({
+    var sliderOdd = $('.nodes:nth-of-type(odd) .slider2').slick({
         slidesToShow: 3,
         slidesToScroll: 3,
         centerMode: true,
         autoplay: true,
         autoplaySpeed: 3000,
         asNavFor: '.slider2',
+        pauseOnHover: false,
         responsive: [
             {
                 breakpoint: 768,
@@ -96,13 +97,14 @@ $(document).ready(function() {
         ]
     });
 
-    $('.nodes:nth-of-type(even) .slider2').attr('dir','rtl').slick({
+    var sliderEven = $('.nodes:nth-of-type(even) .slider2').attr('dir','rtl').slick({
         slidesToShow: 3,
         slidesToScroll: -1,
         centerMode: true,
         autoplay: true,
         autoplaySpeed: 3000,
         asNavFor: '.slider2',
+        pauseOnHover: false,
         rtl: true,
         responsive: [
             {
@@ -121,4 +123,12 @@ $(document).ready(function() {
             }
         ]
     });
+
+    $('.slider2').hover(
+        function () {
+            $('.slider2').slick('slickPause');
+    },
+        function () {
+            $('.slider2').slick('slickPlay');
+    })
 });
