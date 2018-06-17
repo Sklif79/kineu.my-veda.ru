@@ -1,4 +1,5 @@
 <div id='footer'>
+    <div id="toup"></div>
 		<div class='content'>
 		<a name="battoma"></a>
 			<div class='logo'><a href='/'><img src='<?=SITE_TEMPLATE_PATH?>/img/kinergo-logo-mini.png' alt='' /></a></div>

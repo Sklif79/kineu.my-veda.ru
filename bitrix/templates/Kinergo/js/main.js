@@ -59,4 +59,16 @@ $(document).ready(function() {
         }
     });
 
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 700) {
+            $('#toup').show();
+        } else {
+            $('#toup').hide();
+        }
+    });
+
+    $(document).on('click', '#toup', function () {
+        $('html, body').animate({scrollTop: 0}, 500);
+    });
+
 });
