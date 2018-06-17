@@ -1,0 +1,27 @@
+#scroll-content .left .submenu {
+    min-height: 600px;
+}
+
+.content>.contacts li {
+    margin-left: 135px;
+	 margin-top: 30px;
+}
+
+.ec li {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.ec li:nth-of-type(2n) {
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: reverse;
+	-webkit-flex-direction: row-reverse;
+	    -ms-flex-direction: row-reverse;
+	        flex-direction: row-reverse
+}
+
+div.bx-wrapper img{
+display: inline;
+}

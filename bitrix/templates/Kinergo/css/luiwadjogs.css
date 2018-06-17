@@ -1,0 +1,104 @@
+#language{
+    display: inline-block;
+    position: relative;
+    width: 220px;
+}
+
+#language>p{
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: sub;
+}
+#language ul.language{
+	        margin-left: 110px!important;
+			position: absolute;
+}
+
+#language ul.language li{
+	background-color:  rgba(255, 255, 255, 0)!important;
+	padding: 0!important;
+}
+
+
+
+.share-new { 
+     display: inline-block;
+    margin-top: 4px;
+    vertical-align: top;
+          
+}
+
+#linkJS{
+	margin-top: 15px;
+    text-align: right;
+}
+
+
+      .share-new a {border-bottom:none; display:inline-block; width: 32px; height: 32px; margin: 0 7px 0 0; opacity: 0.8; 
+        -moz-transition: all 0.2s 0.01s ease-in;
+        -o-transition: all 0.2s 0.01s ease-in;
+        -webkit-transition: all 0.2s 0.01s ease-in;}
+      .share-new a:hover { opacity: 1.0; }
+      
+      .share-new .icon-facebook { 
+
+                 background: url(images/facebook-variation.png) 0 center no-repeat; 
+                 padding:4px 0px 0px 0px;
+                 font-size:17px;
+                 
+}
+      .share-new .icon-twitter { 
+                 background: url(images/twitter-variation.png) 0 center no-repeat; 
+                 padding:4px 0px 0px 0px;
+                 font-size:17px;
+                 
+       
+}
+
+      .share-new .icon-Google { 
+                 background: url(images/gplus-variation.png) 0 center no-repeat; 
+                 padding:4px 0px 0px 0px;
+                 font-size:17px;
+                 
+       
+}
+
+.share-new .icon-rss { 
+                 background: url(images/rss-variation.png) 0 center no-repeat; 
+                 padding:4px 0px 0px 0px;
+                 font-size:17px;
+                 
+       
+}
+
+.share-new .icon-vk { 
+                 background: url(images/vk-icon.png) 0 center no-repeat; 
+                 padding:4px 0px 0px 0px;
+                 font-size:17px;
+                 
+       
+}
+
+.share-new .icon-mail { 
+                 background: url(images/email-variation.png) 0 center no-repeat; 
+                 padding:4px 0px 0px 0px;
+                 font-size:17px;
+                 
+
+}
+
+#pusto{
+	    height: 500px;
+  background-color: #fff;
+}
+
+#partners ul li{
+display: inline-block;
+    list-style: none;
+    vertical-align: top;
+	    margin-right: 5px;
+}
+
+#partners ul li img{
+	    height: 70px;
+}

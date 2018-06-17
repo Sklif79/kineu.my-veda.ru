@@ -1,0 +1,86 @@
+.removepasvord_close , .login_close, .register_close, .makezakaz_close ,cenazakaz_close {
+	cursor: pointer;
+	width: 22px;
+	height: 22px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	margin: -27px -28px 0 0;
+	background: url('../img/close.png') center center no-repeat;
+}
+
+.consult_close:hover, .register_close:hover,cenazakaz_close:hover , removepasvord_close:hover {opacity: 0.8;}
+
+#login, #register ,#cenazakaz , #removepasvord {
+	width: 260px;
+	padding: 50px 75px;
+	background: #124676;
+}
+
+#makezakaz {
+	width: 380px;
+	padding: 50px 60px;
+	background: #124676;
+}
+#removepasvord .header,
+#login .header,
+ #register .header,
+  #makezakaz .header ,
+   #cenazakaz .header {
+	display: block;
+	color: white;
+	font: normal 30px arial;
+	margin-bottom: 26px;
+}
+
+#makezakaz .header {margin-bottom: 40px;}
+
+#makezakaz .header {line-height: 30px;}
+
+#login .input-text, #register .input-text , #cenazakaz .input-text , #removepasvord .input-text   {
+	font: normal 11px arial;
+	color: #808080;
+	padding: 0px 15px;
+	border: 1px solid #010204;
+	height: 33px;
+	margin-bottom: 15px;
+	background-color: white;
+	width: 228px;
+}
+
+#cenazakaz textarea {
+font: normal 11px arial;
+	color: #808080;
+	padding: 0px 15px;
+	border: 1px solid #010204;
+	height: 100px;
+	margin-bottom: 15px;
+	background-color: white;
+	width: 228px;
+}
+
+
+#login .button, #register .button ,#cenazakaz .button , #removepasvord .button {
+	cursor: pointer;
+	border: 1px solid #000102;
+	width: 260px;
+	height: 35px;
+	color: white;
+	font: normal 16px Arial;
+}
+
+#removepasvord .button:hover  , #login .button:hover , #register .button:hover, #makezakaz a:hover , #cenazakaz .button:hover {background-color: #13487b;}
+
+#makezakaz a {
+	display: inline-block;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	border: 1px solid #000102;
+	width: 184px;
+	height: 27px;
+	padding-top: 6px;
+	color: white;
+	font: normal 16px Arial;
+	margin-right: 8px;
+}
