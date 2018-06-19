@@ -286,3 +286,39 @@ html, body {
 #scroll-content .left .submenu {
     height: 320px!important;
 }
+
+.article-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media (max-width: 1023px) {
+    .article-description {
+        min-height: 0 !important;
+    }
+}
+
+.article-description__btns {
+    opacity: 0;
+}
+
+@media (max-width: 1023px) {
+    .article-description__btns {
+        opacity: 1;
+    }
+}
+
+.btn-tech, .btn-price {
+    margin-top: 20px;
+}
+
+.item_nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image_slider_nav .item_nav img {
+    max-width: calc(100% - 2px);
+}
