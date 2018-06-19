@@ -153,7 +153,7 @@ function alignmentArticleDescription() {
     jQuery(window).bind('load', function () {
         heightSliders = $('.gridl').find('.image').outerHeight();
         $thumbnailsHeight = $('.image_slider_nav').outerHeight();
-        paddingBottom = $thumbnailsHeight/2 - $btnsRow.outerHeight()/2;
+        paddingBottom = $thumbnailsHeight/2 - $btnsRow.outerHeight()/2 + 10;//padding-top / 2 = 10
         $heightBlock.css({'min-height': heightSliders + 'px'});
         $btnsRow.css({'padding-bottom' : paddingBottom + 'px', 'opacity' : '1'});
     });
