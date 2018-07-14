@@ -107,23 +107,15 @@ display: inline-block;
     width: 515px;
 }
 
-#head {
-    position: fixed;
-    left: 0;
-    right: 0;
+.fixed-menu {
+    position: fixed!important;
     top: 0;
-    background: #fff;
     z-index: 10000;
 }
 
-#main {
-    padding-top: 159px;
-}
-
-@media (max-width: 575px) {
-    #main {
-        padding-top: 180px;
-    }
+.header-menu-wrap {
+    height: 46px;
+    clear: both;
 }
 
 #toup {

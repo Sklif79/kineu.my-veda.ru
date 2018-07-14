@@ -208,7 +208,7 @@ array("HIDE_ICONS" => "Y")
 
 
 				</div>
-
+                <div class='header-menu-wrap'>
                 <div class="mobile_navbar">
 
                     <form class='search' method='GET' action="https://<?=$_SERVER['HTTP_HOST']?>/sreach.php" >
@@ -257,6 +257,7 @@ array("HIDE_ICONS" => "Y")
 	false
 );?>
 
+				</div>
 				</div>
 			</div>
 		</div>

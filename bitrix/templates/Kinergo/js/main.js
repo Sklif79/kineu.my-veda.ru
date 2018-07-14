@@ -141,6 +141,28 @@ $(document).ready(function () {
     if ($('.gridl').find('.image').length && $(window).width() > 1023) {
         alignmentArticleDescription();
     }
+
+    (function () {
+        var menu = document.querySelector('#head .menu'),
+            mobileMenu = document.querySelector('.mobile_navbar'),
+            menuWrapper = document.querySelector('.header-menu-wrap');
+
+        if (window.pageYOffset > menuWrapper.offsetTop) {
+            menu.classList.add('fixed-menu');
+            mobileMenu.classList.add('fixed-menu');
+        }
+
+        window.onscroll = function() {
+            if (window.pageYOffset > menuWrapper.offsetTop) {
+                menu.classList.add('fixed-menu');
+                mobileMenu.classList.add('fixed-menu');
+            }
+            else if (window.pageYOffset < menuWrapper.offsetTop) {
+                menu.classList.remove('fixed-menu');
+                mobileMenu.classList.remove('fixed-menu');
+            }
+        };
+    })();
 });
 
 function alignmentArticleDescription() {
