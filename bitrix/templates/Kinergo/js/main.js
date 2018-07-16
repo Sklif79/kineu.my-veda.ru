@@ -163,6 +163,14 @@ $(document).ready(function () {
             }
         };
     })();
+
+    (function() {
+        $('.item_nav').on('click', function () {
+            if ($(this).find('img').data('video')) {
+                $(this).closest('.image').find('a[data-fancybox]').trigger('click');
+            }
+        })
+    })();
 });
 
 function alignmentArticleDescription() {
