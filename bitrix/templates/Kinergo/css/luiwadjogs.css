@@ -323,3 +323,7 @@ html, body {
 .nodes-title {
     text-align: center;
 }
+
+.tbl-equip-wrap {
+    display: none;
+}

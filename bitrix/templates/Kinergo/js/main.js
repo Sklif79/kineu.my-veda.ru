@@ -152,7 +152,7 @@ $(document).ready(function () {
             mobileMenu.classList.add('fixed-menu');
         }
 
-        window.onscroll = function() {
+        window.onscroll = function () {
             if (window.pageYOffset > menuWrapper.offsetTop) {
                 menu.classList.add('fixed-menu');
                 mobileMenu.classList.add('fixed-menu');
@@ -164,10 +164,19 @@ $(document).ready(function () {
         };
     })();
 
-    (function() {
+    (function () {
         $('.item_nav').on('click', function () {
             if ($(this).find('img').data('video')) {
                 $(this).closest('.image').find('a[data-fancybox]').trigger('click');
+            }
+        })
+    })();
+
+    (function () {
+        $('.btn-tech').on('click', function (e) {
+            if ($('.tbl-equip-wrap').length) {
+                e.preventDefault();
+                $('.tbl-equip-wrap').slideToggle();
             }
         })
     })();
@@ -183,8 +192,8 @@ function alignmentArticleDescription() {
     jQuery(window).bind('load', function () {
         heightSliders = $('.gridl').find('.image').outerHeight();
         $thumbnailsHeight = $('.image_slider_nav').outerHeight();
-        paddingBottom = $thumbnailsHeight/2 - $btnsRow.outerHeight()/2 + 10;//padding-top / 2 = 10
+        paddingBottom = $thumbnailsHeight / 2 - $btnsRow.outerHeight() / 2 + 10;//padding-top / 2 = 10
         $heightBlock.css({'min-height': heightSliders + 'px'});
-        $btnsRow.css({'padding-bottom' : paddingBottom + 'px', 'opacity' : '1'});
+        $btnsRow.css({'padding-bottom': paddingBottom + 'px', 'opacity': '1'});
     });
 }
