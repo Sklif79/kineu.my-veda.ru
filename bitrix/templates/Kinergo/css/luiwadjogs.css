@@ -277,6 +277,7 @@ html, body {
 
 #scroll-content .left .submenu {
     height: 320px!important;
+    padding-top: 52px;
 }
 
 .article-description {
@@ -288,6 +289,10 @@ html, body {
 @media (max-width: 1023px) {
     .article-description {
         min-height: 0 !important;
+    }
+
+    #scroll-content .left .submenu {
+        padding-top: 0;
     }
 }
 
@@ -313,4 +318,8 @@ html, body {
 
 .image_slider_nav .item_nav img {
     max-width: calc(100% - 2px);
+}
+
+.nodes-title {
+    text-align: center;
 }
