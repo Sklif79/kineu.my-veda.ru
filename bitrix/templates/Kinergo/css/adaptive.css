@@ -952,7 +952,7 @@ div.bx-wrapper .image {
 .article .info {
   width: 323px;
   overflow: hidden;
-  height: 165px;
+  height: 146px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
