@@ -176,9 +176,9 @@ $(document).ready(function () {
         $('.btn-tech').on('click', function (e) {
             if ($('.tbl-equip-wrap').length) {
                 e.preventDefault();
-                $('.tbl-equip-wrap').slideToggle();
+                $('.tbl-equip-wrap').stop().slideToggle(400, scrollToBottom);
             }
-        })
+        });
     })();
 });
 
@@ -196,4 +196,14 @@ function alignmentArticleDescription() {
         $heightBlock.css({'min-height': heightSliders + 'px'});
         $btnsRow.css({'padding-bottom': paddingBottom + 'px', 'opacity': '1'});
     });
+}
+
+function scrollToBottom() {
+    var top;
+
+    if ($(this).is(':visible')) {
+        top = $(this).offset().top - $(window).height() + $(this).height() + 15;
+
+        $('body, html').animate({scrollTop:top}, 300);
+    }
 }
