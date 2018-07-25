@@ -1,5 +1,5 @@
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
-<ul>
+<ul class="products-list">
 <?
 GLOBAL $USER;
 $mail_f_1=$USER->GetEmail();
@@ -10,7 +10,7 @@ $mail_f_1=$USER->GetEmail();
 	$this->AddEditAction($arItem['ID'], $arItem['EDIT_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_EDIT"));
 	$this->AddDeleteAction($arItem['ID'], $arItem['DELETE_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_DELETE"), array("CONFIRM" => GetMessage('CT_BNL_ELEMENT_DELETE_CONFIRM')));
 	?>
-	<li  id="<?=$this->GetEditAreaId($arItem['ID']);?>">
+	<li  id="<?=$this->GetEditAreaId($arItem['ID']);?>" class="products-list__item">
 
 
 
@@ -58,9 +58,11 @@ $mail_f_1=$USER->GetEmail();
     }
     ?>
 </div>
-						<div class='info'>
+						<div class='info product-vertical-stretch'>
 							<a href='<?echo $arItem["DETAIL_PAGE_URL"]?>' class='header'><?echo $arItem["NAME"]?></a>
 							<p><?echo $arItem["PREVIEW_TEXT"];?></p>
+
+                            <div class="product-vertical-stretch__btns">
 							<a href='<?echo $arItem["DETAIL_PAGE_URL"]?>' class='btn-tech'><?$APPLICATION->IncludeComponent(
 	"bitrix:highloadblock.view",
 	"lang",
@@ -78,6 +80,7 @@ $mail_f_1=$USER->GetEmail();
 		"LIST_URL" => ""
 	)
 );?></a>
+                            </div>
 						</div>
 
 

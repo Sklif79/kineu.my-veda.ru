@@ -180,6 +180,14 @@ $(document).ready(function () {
             }
         });
     })();
+
+    (function () {
+        $('.products-list__item').each(function () {
+           if(!$(this).find('.image_slider_nav').length) {
+               $(this).addClass('no_padding');
+           }
+        });
+    })();
 });
 
 function alignmentArticleDescription() {
