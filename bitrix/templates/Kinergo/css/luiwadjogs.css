@@ -10,97 +10,97 @@
     vertical-align: sub;
 }
 #language ul.language{
-	        margin-left: 110px!important;
-			position: absolute;
+    margin-left: 110px!important;
+    position: absolute;
 }
 
 #language ul.language li{
-	background-color:  rgba(255, 255, 255, 0)!important;
-	padding: 0!important;
+    background-color:  rgba(255, 255, 255, 0)!important;
+    padding: 0!important;
 }
 
 
 
-.share-new { 
-     display: inline-block;
+.share-new {
+    display: inline-block;
     margin-top: 4px;
     vertical-align: top;
-          
+
 }
 
 #linkJS{
-	margin-top: 15px;
+    margin-top: 15px;
     text-align: right;
 }
 
 
-      .share-new a {border-bottom:none; display:inline-block; width: 32px; height: 32px; margin: 0 7px 0 0; opacity: 0.8; 
-        -moz-transition: all 0.2s 0.01s ease-in;
-        -o-transition: all 0.2s 0.01s ease-in;
-        -webkit-transition: all 0.2s 0.01s ease-in;}
-      .share-new a:hover { opacity: 1.0; }
-      
-      .share-new .icon-facebook { 
+.share-new a {border-bottom:none; display:inline-block; width: 32px; height: 32px; margin: 0 7px 0 0; opacity: 0.8;
+    -moz-transition: all 0.2s 0.01s ease-in;
+    -o-transition: all 0.2s 0.01s ease-in;
+    -webkit-transition: all 0.2s 0.01s ease-in;}
+.share-new a:hover { opacity: 1.0; }
 
-                 background: url(images/facebook-variation.png) 0 center no-repeat; 
-                 padding:4px 0px 0px 0px;
-                 font-size:17px;
-                 
-}
-      .share-new .icon-twitter { 
-                 background: url(images/twitter-variation.png) 0 center no-repeat; 
-                 padding:4px 0px 0px 0px;
-                 font-size:17px;
-                 
-       
-}
+.share-new .icon-facebook {
 
-      .share-new .icon-Google { 
-                 background: url(images/gplus-variation.png) 0 center no-repeat; 
-                 padding:4px 0px 0px 0px;
-                 font-size:17px;
-                 
-       
+    background: url(images/facebook-variation.png) 0 center no-repeat;
+    padding:4px 0px 0px 0px;
+    font-size:17px;
+
+}
+.share-new .icon-twitter {
+    background: url(images/twitter-variation.png) 0 center no-repeat;
+    padding:4px 0px 0px 0px;
+    font-size:17px;
+
+
 }
 
-.share-new .icon-rss { 
-                 background: url(images/rss-variation.png) 0 center no-repeat; 
-                 padding:4px 0px 0px 0px;
-                 font-size:17px;
-                 
-       
+.share-new .icon-Google {
+    background: url(images/gplus-variation.png) 0 center no-repeat;
+    padding:4px 0px 0px 0px;
+    font-size:17px;
+
+
 }
 
-.share-new .icon-vk { 
-                 background: url(images/vk-icon.png) 0 center no-repeat; 
-                 padding:4px 0px 0px 0px;
-                 font-size:17px;
-                 
-       
+.share-new .icon-rss {
+    background: url(images/rss-variation.png) 0 center no-repeat;
+    padding:4px 0px 0px 0px;
+    font-size:17px;
+
+
 }
 
-.share-new .icon-mail { 
-                 background: url(images/email-variation.png) 0 center no-repeat; 
-                 padding:4px 0px 0px 0px;
-                 font-size:17px;
-                 
+.share-new .icon-vk {
+    background: url(images/vk-icon.png) 0 center no-repeat;
+    padding:4px 0px 0px 0px;
+    font-size:17px;
+
+
+}
+
+.share-new .icon-mail {
+    background: url(images/email-variation.png) 0 center no-repeat;
+    padding:4px 0px 0px 0px;
+    font-size:17px;
+
 
 }
 
 #pusto{
-	    height: 500px;
-  background-color: #fff;
+    height: 500px;
+    background-color: #fff;
 }
 
 #partners ul li{
-display: inline-block;
+    display: inline-block;
     list-style: none;
     vertical-align: top;
-	    margin-right: 5px;
+    margin-right: 5px;
 }
 
 #partners ul li img{
-	    height: 70px;
+    height: 70px;
 }
 
 .article li {
@@ -126,8 +126,11 @@ display: inline-block;
     height: 50px;
     background: url("../img/up.png") 50% 50% #fff no-repeat;
     cursor: pointer;
+    -webkit-border-radius: 7px;
     border-radius: 7px;
     display: none;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
     transition: 0.2s;
     z-index: 10000;
 }
@@ -138,6 +141,7 @@ display: inline-block;
         bottom: 40px;
         width: 40px;
         height: 40px;
+        -webkit-background-size: cover;
         background-size: cover;
     }
 }
@@ -147,14 +151,19 @@ html, body {
 }
 
 .equipment .gridr {
+    width: -webkit-calc(100% - 335px);
     width: calc(100% - 335px);
 }
 
 .eblock .info {
+    width: -webkit-calc(100% - 237px);
     width: calc(100% - 237px);
 }
 
 #scroll-content {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
     height: auto !important;
 }
@@ -164,11 +173,18 @@ html, body {
 }
 
 #scroll-content .left {
+    -webkit-box-flex: 0;
+    -webkit-flex: none;
+    -ms-flex: none;
     flex: none;
 }
 
 #scroll-content .right {
+    -webkit-box-flex: 0;
+    -webkit-flex: none;
+    -ms-flex: none;
     flex: none;
+    max-width: -webkit-calc(100% - 250px);
     max-width: calc(100% - 250px);
 }
 
@@ -188,6 +204,7 @@ html, body {
     padding: 8px;
     margin-bottom: 15px;
     background: url(../img/slide-bg.png) center center no-repeat;
+    -webkit-background-size: cover;
     background-size: cover;
 }
 
@@ -206,6 +223,7 @@ html, body {
 
 .slider2 .image {
     width: 100%;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -281,8 +299,18 @@ html, body {
 }
 
 .article-description {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
@@ -311,13 +339,27 @@ html, body {
 }
 
 .item_nav {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
 .image_slider_nav .item_nav img {
+    max-width: -webkit-calc(100% - 2px);
     max-width: calc(100% - 2px);
+    -webkit-box-flex: 0;
+    -webkit-flex: none;
+    -ms-flex: none;
+    flex: none;
 }
 
 .nodes-title {
@@ -329,17 +371,43 @@ html, body {
 }
 
 .product-vertical-stretch {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column;
+    width: calc(100% - 300px);
+}
+
+@media (max-width: 767px) {
+    .product-vertical-stretch {
+        width: 100%;
+    }
 }
 
 .product-vertical-stretch > * {
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-positive: 0;
     flex-grow: 0;
 }
 
 .product-vertical-stretch__btns {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
     flex-grow: 1;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
     align-items: flex-end;
     padding-bottom: 59px;
 }
