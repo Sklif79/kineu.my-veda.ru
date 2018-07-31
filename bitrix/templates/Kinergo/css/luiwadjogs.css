@@ -415,3 +415,7 @@ html, body {
 .no_padding .product-vertical-stretch__btns {
     padding-bottom: 0;
 }
+
+#scroll-content .sm-label + .submenu {
+    padding-top: 0;
+}
